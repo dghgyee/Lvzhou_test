@@ -1,0 +1,525 @@
+<!doctype html>
+<html class="no-js " lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<meta name="description" content="Responsive Bootstrap 4 and web Application ui kit.">
+<title>PECT-充值中心</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon-->
+<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/plugins/jvectormap/jquery-jvectormap-2.0.3.min.css"/>
+<link rel="stylesheet" href="assets/plugins/morrisjs/morris.min.css" />
+<!-- Custom Css -->
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/color_skins.css">
+<!-- Bootstrap Select Css -->
+<link href="assets/plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
+</head>
+<body class="theme-purple">
+<!-- Page Loader -->
+<div class="page-loader-wrapper">
+    <div class="loader">
+        <div class="m-t-30"><img class="zmdi-hc-spin" src="assets/images/logo.png" width="48" height="48" alt="Pect"></div>
+        <p>正在载入 请稍等...</p>        
+    </div>
+</div>
+<!-- Overlay For Sidebars -->
+<div class="overlay"></div>
+
+<!-- Top Bar -->
+<nav class="navbar p-l-5 p-r-5">
+    <ul class="nav navbar-nav navbar-left">
+        <li>
+            <div class="navbar-header">
+                <a href="javascript:void(0);" class="bars"></a>
+                <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" width="30" alt="Pect"><span class="m-l-10">PECT</span></a>
+            </div>
+        </li>
+        <li><a href="javascript:void(0);" class="ls-toggle-btn" data-close="true"><i class="zmdi zmdi-swap"></i></a></li>
+        <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="zmdi zmdi-notifications"></i>
+            <div class="notify"><span class="heartbit"></span><span class="point"></span></div>
+            </a>
+            <ul class="dropdown-menu pullDown">
+                <li class="body">
+                    <ul class="menu list-unstyled">
+                        <li>
+                            <a href="javascript:void(0);">
+                                <div class="media">
+                                    <img class="media-object" src="assets/images/xs/avatar2.jpg" alt="">
+                                    <div class="media-body">
+                                        <span class="name">李四 <span class="time">30分钟之前</span></span>
+                                        <span class="message">订单编号 230 157 142 229 155 155</span>                                        
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <div class="media">
+                                    <img class="media-object" src="assets/images/xs/avatar3.jpg" alt="">
+                                    <div class="media-body">
+                                        <span class="name">王五 <span class="time">31分钟之前</span></span>
+                                        <span class="message">订单编号 231 142 139 228 186 148</span>                                        
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <div class="media">
+                                    <img class="media-object" src="assets/images/xs/avatar4.jpg" alt="">
+                                    <div class="media-body">
+                                        <span class="name">赵六 <span class="time">35分钟之前</span></span>
+                                        <span class="message">订单编号 232 181 181 229 133 173</span>                                        
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <div class="media">
+                                    <img class="media-object" src="assets/images/xs/avatar5.jpg" alt="">
+                                    <div class="media-body">
+                                        <span class="name">刘一 <span class="time">35分钟之前</span></span>
+                                        <span class="message">订单编号 229 136 152 228 184 128</span>                                        
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <div class="media">
+                                    <img class="media-object" src="assets/images/xs/avatar6.jpg" alt="">
+                                    <div class="media-body">
+                                        <span class="name">张三 <span class="time">1小时之前</span></span>
+                                        <span class="message">订单编号 229 188 160 228 184 137</span>                                        
+                                    </div>
+                                </div>
+                            </a>
+                        </li>                        
+                    </ul>
+                </li>
+                <li class="footer"> <a href="trading-Information.html">查看全部</a> </li>
+            </ul>
+        </li>
+       
+        <li class="hidden-sm-down">
+            <div class="input-group">                
+                <input type="text" class="form-control" placeholder="Search...">
+                <span class="input-group-addon">
+                    <i class="zmdi zmdi-search"></i>
+                </span>
+            </div>
+        </li>        
+        <li class="float-right">
+            <a href="javascript:void(0);" class="fullscreen hidden-sm-down" data-provide="fullscreen" data-close="true"><i class="zmdi zmdi-fullscreen"></i></a>
+            <a href="sign-in.html" class="mega-menu" data-close="true"><i class="zmdi zmdi-power"></i></a>
+        </li>
+    </ul>
+</nav>
+
+<!-- Left Sidebar -->
+<aside id="leftsidebar" class="sidebar">
+    <ul class="nav nav-tabs">
+        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#Dashboard"><i class="zmdi zmdi-home m-r-5"></i>PECT</a></li>
+        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#user"><i class="zmdi zmdi-account m-r-5"></i>资料</a></li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane stretchRight active" id="Dashboard">
+            <div class="menu">
+                <ul class="list">
+                    <li>
+                        <div class="user-info">
+                            <div class="image"><a href="index.html"><img src="assets/images/profile_av.jpg" alt="User"></a></div>
+                            <div class="detail">
+                                <h4>张扬</h4>
+                                <small>id：Josezhang</small>                        
+                            </div>
+                            <a title="facebook" href="#"><i class="zmdi zmdi-facebook"></i></a>
+                            <a title="twitter" href="#"><i class="zmdi zmdi-twitter"></i></a>
+                            <a title="instagram" href="#"><i class="zmdi zmdi-instagram"></i></a>                            
+                        </div>
+                    </li>
+                    <li class="header">主菜单</li>
+					<li> <a href="shop.html" class="menu-toggle"><i class="zmdi zmdi-home"></i><span>逛商场</span> </a></li>
+                    <li class="active open"> <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-apps"></i><span>买家中心</span> </a>
+                        <ul class="ml-menu">
+                            <li class="active"><a href="recharge.html">PECT充值</a></li>
+							<li><a href="transfer-pect.html">PECT互转</a></li>
+                            <li><a href="orders.html">购物订单</a></li>
+                            <li><a href="expenses-record.html">消费记录</a></li>
+                        </ul>
+                    </li>
+                    <li> <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-shopping-cart"></i><span>卖家中心</span> </a>
+                        <ul class="ml-menu">
+							<li> <a href="shop-application.html">店铺申请</a></li>
+                            <li> <a href="edit-oneshop.html">店铺管理</a></li>
+							<li> <a href="edit-p-product-detail.html">商品发布</a></li>
+                            <li> <a href="edit-product-list.html">商品管理</a></li>
+							<li> <a href="trading-Information.html">客户订单</a> </li>   
+							<li><a href="returns-list.html">退货</a> </li>
+                            
+                        </ul>
+                    </li>
+					<!--li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-delicious"></i><span>订单管理</span></a>
+						<ul class="ml-menu">
+							<li> <a href="trading-Information.html">客户订单</a> </li>   
+							<li><a href="returns-list.html">退货</a> </li>
+                            						
+                        </ul>
+					</li-->
+					<li> <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-assignment"></i><span>提货单管理</span> </a>
+						<ul class="ml-menu">
+							<li> <a href="bill.html">我的提货单</a></li>
+                            <li> <a href="listed-sell-bill.html">出售大厅</a> </li>                    
+                            <li> <a href="transfer-bill-r.html">买入记录</a> </li>                    
+                            <li> <a href="transfer-bill-c.html">卖出记录</a> </li>                    
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tab-pane stretchLeft" id="user">
+            <div class="menu">
+                <ul class="list">
+                    <li>
+                        <div class="user-info m-b-20 p-b-15">
+                            <div class="image"><a href="index.html"><img src="assets/images/profile_av.jpg" alt="User"></a></div>
+                            <div class="detail">
+                                <h4>张扬</h4>
+                                <small>id：Josezhang</small>                        
+                            </div>
+                            <a title="facebook" href="#"><i class="zmdi zmdi-facebook"></i></a>
+                            <a title="twitter" href="#"><i class="zmdi zmdi-twitter"></i></a>
+                            <a title="instagram" href="#"><i class="zmdi zmdi-instagram"></i></a>
+                            <p class="text-muted">辽宁省沈阳市铁西区千缘财富商汇A座1203</p>
+                            <div class="row">
+                                <div class="col-4">
+                                    <h5 class="m-b-5">501</h5>
+                                    <small>积分</small>
+                                </div>
+                                <div class="col-4">
+                                    <h5 class="m-b-5">2501</h5>
+                                    <small>法币</small>
+                                </div>
+                                <div class="col-4">
+                                    <h5 class="m-b-5">6051</h5>
+                                    <small>余额</small>
+                                </div>                            
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <small class="text-muted">邮箱: </small>
+                        <p>yang.z@yahoo.com</p>
+                        <hr>
+                        <small class="text-muted">电话: </small>
+                        <p>+ 202-555-0191</p>
+                        <hr>
+                        <small class="text-muted">地址: </small>
+                        <p>辽宁省沈阳市铁西区千缘财富商汇A座1203</p>
+                        <hr>                   
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>    
+</aside>
+
+
+
+
+<!-- Main Content -->
+<section class="content home">
+    <div class="block-header">
+        <div class="row">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <h2>积分充值
+                <small>欢迎来到PECT</small>
+                </h2>
+            </div>            
+            <div class="col-lg-7 col-md-7 col-sm-12 text-right">
+                <button class="btn btn-white btn-icon btn-round hidden-sm-down float-right m-l-10" type="button">
+                    <i class="zmdi zmdi-plus"></i>
+                </button>
+                <ul class="breadcrumb float-md-right">
+                    <li class="breadcrumb-item"><a href="index.html"><i class="zmdi zmdi-home"></i> PECT</a></li>
+                    <li class="breadcrumb-item active">积分充值</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row clearfix">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="header">
+                        <h2><strong>充值</strong> 账号</h2>
+                    </div>
+                    <div class="body">
+                        <h3 class="m-b-0">请确认您的ID : <strong class="text-primary">id：Josezhang</strong></h3><h3 class="m-b-0">您的剩余积分为 : <strong class="text-primary">501</strong>分</h3>
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item inlineblock"><a class="nav-link active" data-toggle="tab" href="#details" aria-expanded="true">储蓄卡</a></li>
+                            <li class="nav-item inlineblock"><a class="nav-link" data-toggle="tab" href="#notes" aria-expanded="false">信用卡</a></li>
+                            <li class="nav-item inlineblock"><a class="nav-link" data-toggle="tab" href="#history" aria-expanded="false">银行汇款</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane in active" id="details" aria-expanded="true">
+                        <div class="card" id="details">
+                            <div class="body">                                
+                                <div class="row clearfix">
+										<div class="col-lg-3 col-md-3 col-sm-3">
+											<div class="form-group">
+											<b>请在下面输入您要充值的积分数量</b>
+												<div class="input-group">
+													<input class="form-control" placeholder="请输入您要充值的金额" type="rechage">
+													<span class="input-group-addon">元</i></span>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-4 col-md-4 col-sm-4">
+											您充值的积分需要支付<span class="text-danger">***元</span>
+										</div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="notes" aria-expanded="false">
+                        <div class="row clearfix">
+                            <div class="col-lg-12 col-md-12">
+                                <div class="card">
+                                <div class="body">                                
+                                <div class="row clearfix">
+                                    
+										<div class="col-lg-12 col-md-12 col-sm-12">
+											<div class="form-group">
+												<h6><strong>请在下面输入您要充值的积分数量</strong></h6> 
+											</div>
+										</div>
+										<div class="col-lg-3 col-md-3 col-sm-3">
+											<div class="form-group">
+												<input class="form-control" placeholder="请输入您要充值的金额" type="rechage">
+											</div>
+										</div>
+										<div class="col-lg-1 col-md-1 col-sm-1">
+											<div style="">
+														<h3><strong>分</strong> </h3>
+											</div>
+										</div>
+										<div class="col-lg-4 col-md-4 col-sm-4">
+											<h3>您充值的积分需要支付<span class="text-danger">***元</span></h3>
+										</div>
+                                </div>
+                                <div class="mt-40"></div>
+                                    <div class="col-md-12">
+                                        <div class="row clearfix">
+											<div class="col-lg-12 col-md-12 col-sm-12">
+                                            <h6>请选择支付方式:</h6>
+											</div>
+                                            <hr>
+											<div class="col-lg-3 col-md-3 col-sm-3">
+											<label for="gs2">
+												<input name="cxk" id="gs2" value="gs2" type="radio"><img src="assets/images/recharge/bank_001.gif" height="40"  title="工商银行" disabled="">
+											</label>
+											</div>
+											<div class="col-lg-3 col-md-3 col-sm-3">
+											<label for="js2">
+												<input name="cxk" id="js2" value="js2" type="radio"><img src="assets/images/recharge/bank_002.gif" height="40"  title="建设银行" disabled="">
+											</label>
+											</div>
+											<div class="col-lg-3 col-md-3 col-sm-3">
+											<label for="ny2">
+												<input name="cxk" id="ny2" value="ny2" type="radio"><img src="assets/images/recharge/bank_003.gif" height="40"  title="农业银行" disabled="">
+											</label>
+											</div>
+											<div class="col-lg-3 col-md-3 col-sm-3">
+											<label for="zs2">
+												<input name="cxk" id="zs2" value="zs2" type="radio"><img src="assets/images/recharge/bank_004.gif" height="40"  title="招商银行" disabled="">
+											</label>
+											</div>
+											<div class="col-lg-3 col-md-3 col-sm-3">
+											<label for="jt2">
+												<input name="cxk" id="jt2" value="jt2" type="radio"><img src="assets/images/recharge/bank_005.gif" height="40"  title="交通银行" disabled="">
+											</label>
+											</div>
+											<div class="col-lg-3 col-md-3 col-sm-3">
+											<label for="zg2">
+												<input name="cxk" id="zg2" value="zg2" type="radio"><img src="assets/images/recharge/bank_006.gif" height="40"  title="中国银行" disabled="">
+											</label>
+											</div>
+											<div class="col-lg-3 col-md-3 col-sm-3">
+											<label for="yz2">
+												<input name="cxk" id="yz2" value="yz2" type="radio"><img src="assets/images/recharge/bank_007.gif" height="40"  title="邮政银行" disabled="">
+											</label>
+											</div>
+											<div class="col-lg-3 col-md-3 col-sm-3">
+											<label for="zx2">
+												<input name="cxk" id="zx2" value="zx2" type="radio"><img src="assets/images/recharge/bank_008.gif" height="40"  title="中信银行" disabled="">
+											</label>
+											</div>
+											<div class="col-lg-3 col-md-3 col-sm-3">
+											<label for="gd2">
+												<input name="cxk" id="gd2" value="gd2" type="radio"><img src="assets/images/recharge/bank_009.gif" height="40"  title="光大银行" disabled="">
+											</label>
+											</div>
+										</div>
+										<hr>
+										<div class="row clearfix">
+											<div class="col-sm-6">
+												<select id="banklist2" class="form-control show-tick">
+													<option value="">-- 选择更多银行 --</option>
+													<option value="华夏银行">华夏银行</option>
+													<option value="兴业银行">兴业银行</option>
+													<option value="中国民生银行">中国民生银行</option>
+													<option value="广东发展银行">广东发展银行</option>
+													<option value="上海浦东银行">上海浦东银行</option>
+													<option value="南京银行">南京银行</option>
+													<option value="杭州银行">杭州银行</option>
+													<option value="宁波银行">宁波银行</option>
+													<option value="北京银行">北京银行</option>
+													<option value="上海银行">上海银行</option>
+													<option value="盛京银行">盛京银行</option>
+												</select>
+											</div>
+										</div>
+										<div class="row clearfix">
+											<div class="col-sm-6">
+												<button class="btn btn-primary">下一步</button>
+											</div>
+										</div>
+                                    </div>
+                                <hr>
+                               
+                                
+                            </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="history" aria-expanded="false">
+                        <div class="card" id="details">
+                            <div class="body">                                
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12">
+                                        
+                                            <strong>汇款注意事项：</strong>
+                                       
+										<p>本站提供在线支付、银行电子汇款、上门交费三种支付方式 （在线支付实时到账，无须传真底单，建议使用！）</p>
+										<p>选择公司转账的用户，需要将汇款底单在 汇款确认 中上传底单扫描件，若不做汇款确认，将不能为您及时入款。</p>
+										<p>如果您需要索取发票，<span class="text-primary">请确保会员所有人名称与发票抬头必须相同。如您会员帐户是个人性质，且需要索取公司抬头的发票，请先</span>变更帐户性质为公司。发票需要在付款后3个月以内索取。</p>
+										<p class="text-primary">人民银行最新规定：自2016/12/1起，个人通过ATM等自助柜员机转账（本人同行账户除外），24小时后才能到账。为避免汇款不能及时到账延误您业务办理，推荐您选择快捷高效的“在线支付方式”。
+										</p>
+                                    </div>
+                                </div>
+                                <div class="mt-40"></div>
+                                <div class="row">
+                                    <div class="col-md-12">
+									<strong>公司转账：</strong>
+                                        <div class="table-responsive">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>公司名称</th>
+                                                        <th>开户行</th>
+                                                        <th>银行账号</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>有限公司</td>
+                                                        <td>招商银行成都小天支行	</td>
+                                                        <td>281083 1059 11111</td>
+                                                        
+                                                    </tr>
+                                                    <tr>
+														<td colspan="3">
+														<span class="text-primary">说明：若需要索取专用发票或需快递发票请预存15元快递费用，以免索取发票时快递费用不足。</span>
+														</td>
+													</tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+								<div class="mt-40"></div>
+                                <div class="row">
+                                    <div class="col-md-12">
+									<strong>上门缴费：</strong>
+                                        <div class="table-responsive">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>地址</th>
+                                                        <th>地图</th>
+                                                        <th>地址</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>公司地址</td>
+                                                        <td><a href="" ref="nofollow"><i class="zmdi zmdi-map"></i></td>
+                                                        <td>xx省xx市xx区xx街道xx号
+														</td>
+                                                    </tr>
+                                                    <tr>
+														<td>特别提示</td>
+														<td colspan="2">
+														<span class="text-primary">周末及下班时间上门交费的客户请自备零钞，不设找补。非正常上班时间不提供发票开具服务，可以在线申请发票或上班时间来开具，谢谢合作！</span>
+														</td>
+													</tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+					
+                            <div class="card">
+							<div class="body">
+								<div class="col-md-12">
+										<div class="col-lg-12 col-md-12 col-sm-12">
+											<div class="form-group">
+												<h4><strong>说明：</strong></h4>
+											</div>
+										</div>
+                                        <div class="body m-b-10 l-khaki">
+											<p>我司提供：银行直联、支付宝支付、微信支付等多个银行网关供客户选择。</p>
+
+											<p>支付平台支持全国几十种储蓄卡信用卡的在线支付（如：招行一卡通，中行长城借记卡，工行牡丹灵通卡，建行龙卡等，在线支付过程由各银行采用完全加密形式实现，安全可靠。</p>
+
+											<p>1、我们采用了最新的微信支付、支付宝支付平台，能够使用的支付卡种类增加了很多。</p>
+
+											<p>2、如果您使用实时支付的卡进行在线支付，相应金额会在最短的时间内加入您相应的代理预付款中，一般时间不超过10分钟；如您使用的不是实时支付的卡，相应金额将于24-48小时内加入您相应的代理预付款中。</p>
+
+											<p>3、如果您需要索取发票，请先仔细阅读发票申请相关说明。</p>
+
+											<p>4、提现需收取1%手续费。</p>
+										</div>
+                                    </div>
+                            </div>       
+							</div>
+                                <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Jquery Core Js --> 
+<script src="assets/bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js ( jquery.v3.2.1, Bootstrap4 js) --> 
+<script src="assets/bundles/vendorscripts.bundle.js"></script> <!-- slimscroll, waves Scripts Plugin Js -->
+
+<script src="assets/bundles/morrisscripts.bundle.js"></script><!-- Morris Plugin Js -->
+<script src="assets/bundles/jvectormap.bundle.js"></script> <!-- JVectorMap Plugin Js -->
+<script src="assets/bundles/knob.bundle.js"></script> <!-- Jquery Knob, Count To, Sparkline Js -->
+
+<script src="assets/bundles/mainscripts.bundle.js"></script>
+<script src="assets/js/pages/index.js"></script>
+<script src="assets/js/pages/forms/basic-form-elements.js"></script> 
+</body>
+</html>

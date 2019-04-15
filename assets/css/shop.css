@@ -1,0 +1,12 @@
+.nav-pills .nav-item .nav-link{
+	border-radius:4px;
+	padding: 12px;
+	width:auto;
+	min-width:60px;
+	font-size:14px;
+}
+.nav-tabs{display:flex;}
+.carousel-inner{height:180px;}
+.radio{
+	float:left;
+}

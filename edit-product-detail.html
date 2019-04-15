@@ -1,0 +1,872 @@
+﻿<!doctype html>
+<html class="no-js " lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<meta name="description" content="Responsive Bootstrap 4 and web Application ui kit.">
+
+<title>PECT-产品发布</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<!-- Favicon-->
+<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+<!-- Custom Css -->
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/ecommerce.css">
+<link rel="stylesheet" href="assets/css/color_skins.css">
+<!-- Multi Select Css -->
+<link rel="stylesheet" href="assets/plugins/multi-select/css/multi-select.css">
+<!-- Dropzone Css -->
+<link rel="stylesheet" href="assets/plugins/dropzone/dropzone.css">
+<!-- Bootstrap Select Css -->
+<link href="assets/plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
+<!-- Bootstrap element Css -->
+<link href="assets/css/element-ui.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/shop.css">
+
+<!-- Morris Chart Css-->
+<link rel="stylesheet" href="assets/plugins/morrisjs/morris.css" />
+<!-- Colorpicker Css -->
+<link rel="stylesheet" href="assets/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css" />
+
+<link rel="stylesheet" href="assets/plugins/jquery-spinner/css/bootstrap-spinner.css">
+<link rel="stylesheet" href="assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css">
+<link rel="stylesheet" href="assets/plugins/nouislider/nouislider.min.css" />
+</head>
+<body class="theme-purple">
+<!-- Page Loader --> 
+<div class="page-loader-wrapper">
+    <div class="loader">
+        <div class="m-t-30"><img class="zmdi-hc-spin" src="assets/images/logo.png" width="48" height="48" alt="Pect"></div>
+        <p>Please wait...</p>        
+    </div>
+</div>
+
+<!-- Overlay For Sidebars -->
+<div class="overlay"></div>
+
+<!-- Top Bar -->
+<nav class="navbar p-l-5 p-r-5">
+    <ul class="nav navbar-nav navbar-left">
+        <li>
+            <div class="navbar-header">
+                <a href="javascript:void(0);" class="bars"></a>
+                <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" width="30" alt="PECT"><span class="m-l-10">PECT</span></a>
+            </div>
+        </li>
+        <li><a href="javascript:void(0);" class="ls-toggle-btn" data-close="true"><i class="zmdi zmdi-swap"></i></a></li>
+        
+        <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="zmdi zmdi-notifications"></i>
+            <div class="notify"><span class="heartbit"></span><span class="point"></span></div>
+            </a>
+            <ul class="dropdown-menu pullDown">
+                <li class="body">
+                    <ul class="menu list-unstyled">
+                        <li>
+                            <a href="javascript:void(0);">
+                                <div class="media">
+                                    <img class="media-object" src="assets/images/xs/avatar2.jpg" alt="">
+                                    <div class="media-body">
+                                        <span class="name">李四 <span class="time">30分钟之前</span></span>
+                                        <span class="message">订单编号 230 157 142 229 155 155</span>                                        
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <div class="media">
+                                    <img class="media-object" src="assets/images/xs/avatar3.jpg" alt="">
+                                    <div class="media-body">
+                                        <span class="name">王五 <span class="time">31分钟之前</span></span>
+                                        <span class="message">订单编号 231 142 139 228 186 148</span>                                        
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <div class="media">
+                                    <img class="media-object" src="assets/images/xs/avatar4.jpg" alt="">
+                                    <div class="media-body">
+                                        <span class="name">赵六 <span class="time">35分钟之前</span></span>
+                                        <span class="message">订单编号 232 181 181 229 133 173</span>                                        
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <div class="media">
+                                    <img class="media-object" src="assets/images/xs/avatar5.jpg" alt="">
+                                    <div class="media-body">
+                                        <span class="name">刘一 <span class="time">35分钟之前</span></span>
+                                        <span class="message">订单编号 229 136 152 228 184 128</span>                                        
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <div class="media">
+                                    <img class="media-object" src="assets/images/xs/avatar6.jpg" alt="">
+                                    <div class="media-body">
+                                        <span class="name">张三 <span class="time">1小时之前</span></span>
+                                        <span class="message">订单编号 229 188 160 228 184 137</span>                                        
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer"> <a href="trading-Information.html">查看全部</a> </li>
+            </ul>
+        </li>
+        
+        <li class="hidden-sm-down">
+            <div class="input-group">                
+                <input type="text" class="form-control" placeholder="搜索...">
+                <span class="input-group-addon">
+                    <i class="zmdi zmdi-search"></i>
+                </span>
+            </div>
+        </li>        
+        <li class="float-right">
+            <a href="javascript:void(0);" class="fullscreen hidden-sm-down" data-provide="fullscreen" data-close="true"><i class="zmdi zmdi-fullscreen"></i></a>
+            <a href="sign-in.html" class="mega-menu" data-close="true"><i class="zmdi zmdi-power"></i></a>
+        </li>
+    </ul>
+</nav>
+
+<!-- Left Sidebar -->
+<aside id="leftsidebar" class="sidebar">
+    <ul class="nav nav-tabs">
+        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#Dashboard"><i class="zmdi zmdi-home m-r-5"></i>PECT</a></li>
+        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#user"><i class="zmdi zmdi-account m-r-5"></i>资料</a></li> 
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane stretchRight active" id="Dashboard">
+            <div class="menu">
+                <ul class="list">
+                    <li>
+                        <div class="user-info">
+                            <div class="image"><a href="index.html"><img src="assets/images/profile_av.jpg" alt="User"></a></div>
+                            <div class="detail">
+                                <h4>张扬</h4>
+                                <small>id：Josezhang</small>                        
+                            </div>
+                            <a title="facebook" href="#"><i class="zmdi zmdi-facebook"></i></a>
+                            <a title="twitter" href="#"><i class="zmdi zmdi-twitter"></i></a>
+                            <a title="instagram" href="#"><i class="zmdi zmdi-instagram"></i></a>                            
+                        </div>
+                    </li>
+                    <li class="header">主菜单</li>
+					<li> <a href="shop.html" class="menu-toggle"><i class="zmdi zmdi-home"></i><span>逛商场</span> </a></li>
+                    <li> <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-apps"></i><span>买家中心</span> </a>
+                        <ul class="ml-menu">
+                            <li><a href="recharge.html">PECT充值</a></li>
+							<li><a href="transfer-pect.html">PECT互转</a></li>
+                            <li><a href="orders.html">购物订单</a></li>
+                            <li><a href="expenses-record.html">消费记录</a></li>
+                        </ul>
+                    </li>
+                    <li class="active open"> <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-shopping-cart"></i><span>卖家中心</span> </a>
+                        <ul class="ml-menu">
+							<li> <a href="shop-application.html">店铺申请</a></li>
+                            <li> <a href="edit-oneshop.html">店铺管理</a></li>
+							<li> <a href="edit-p-product-detail.html">商品发布</a></li>
+                            <li class="active"> <a href="edit-product-list.html">商品管理</a></li>
+							<li> <a href="trading-Information.html">客户订单</a> </li>   
+							<li><a href="returns-list.html">退货</a> </li>
+                            
+                        </ul>
+                    </li>
+					<!--li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-delicious"></i><span>订单管理</span></a>
+						<ul class="ml-menu">
+							<li> <a href="trading-Information.html">客户订单</a> </li>   
+							<li><a href="returns-list.html">退货</a> </li>
+                            						
+                        </ul>
+					</li-->
+					<li> <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-assignment"></i><span>提货单管理</span> </a>
+						<ul class="ml-menu">
+							<li> <a href="bill.html">我的提货单</a></li>
+                            <li> <a href="listed-sell-bill.html">出售大厅</a> </li>                    
+                            <li> <a href="transfer-bill-r.html">买入记录</a> </li>                    
+                            <li> <a href="transfer-bill-c.html">卖出记录</a> </li>                    
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tab-pane stretchLeft" id="user">
+            <div class="menu">
+                <ul class="list">
+                    <li>
+                        <div class="user-info m-b-20 p-b-15">
+                            <div class="image"><a href="index.html"><img src="assets/images/profile_av.jpg" alt="User"></a></div>
+                            <div class="detail">
+                                <h4>张扬</h4>
+                                <small>id：Josezhang</small>                        
+                            </div>
+                            <a title="facebook" href="#"><i class="zmdi zmdi-facebook"></i></a>
+                            <a title="twitter" href="#"><i class="zmdi zmdi-twitter"></i></a>
+                            <a title="instagram" href="#"><i class="zmdi zmdi-instagram"></i></a>
+                            <p class="text-muted">辽宁省沈阳市铁西区千缘财富商汇A座1203</p>
+                            <div class="row">
+                                <div class="col-4">
+                                    <h5 class="m-b-5">501</h5>
+                                    <small>积分</small>
+                                </div>
+                                <div class="col-4">
+                                    <h5 class="m-b-5">2501</h5>
+                                    <small>法币</small>
+                                </div>
+                                <div class="col-4">
+                                    <h5 class="m-b-5">6051</h5>
+                                    <small>余额</small>
+                                </div>                            
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <small class="text-muted">邮箱: </small>
+                        <p>yang.z@yahoo.com</p>
+                        <hr>
+                        <small class="text-muted">电话: </small>
+                        <p>+ 202-555-0191</p>
+                        <hr>
+                        <small class="text-muted">地址: </small>
+                        <p>辽宁省沈阳市铁西区千缘财富商汇A座1203</p>
+                        <hr>                               
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>    
+</aside>
+
+
+
+
+<section class="content ecommerce-page">
+    <div class="block-header">
+        <div class="row">
+            <div class="col-lg-7 col-md-6 col-sm-12">
+                <h2>产品信息
+                <small>欢迎来到PECT</small>
+                </h2>
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-12">
+                <ul class="breadcrumb float-md-right">
+                    <li class="breadcrumb-item"><a href="index.html"><i class="zmdi zmdi-home"></i> PECT</a></li>
+                    <li class="breadcrumb-item"><a href="ec-Dashboard.html">商城</a></li>
+                    <li class="breadcrumb-item active">产品信息</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row clearfix">
+			
+            <div class="col-lg-12">
+				<div class="card">
+					<div class="body">
+									<select id="optgroup" class="ms" multiple="multiple">
+										<optgroup label="产品分类1">
+										<option value="类别1">类别1</option>
+										<option value="类别2">类别2</option>
+										</optgroup>
+										<optgroup label="产品分类2">
+										<option value="类别6">类别6</option>
+										<option value="类别3">类别3</option>
+										<option value="类别4">类别4</option>
+										<option value="类别5">类别5</option>
+										</optgroup>
+									</select>
+								</div>
+				</div>
+                <div class="card">
+                    <div class="body">
+                        <div class="row">
+							
+								
+							
+                            <div class="preview col-lg-4 col-md-12">
+                                <div class="preview-pic tab-content">
+                                    <div class="tab-pane active" id="product_1"><img src="assets/images/ecommerce/1.png" class="img-fluid" /></div>
+                                    <div class="tab-pane" id="product_2"><img src="assets/images/ecommerce/2.png" class="img-fluid"/></div>
+                                    <div class="tab-pane" id="product_3"><img src="assets/images/ecommerce/3.png" class="img-fluid"/></div>
+                                    <div class="tab-pane" id="product_4"><img src="assets/images/ecommerce/4.png" class="img-fluid"/></div>
+                                    <div class="tab-pane" id="product_5"><img src="assets/images/ecommerce/5.png" class="img-fluid"/></div>
+                                </div>
+                                <ul class="preview-thumbnail nav nav-tabs">
+                                    <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#product_1"><img src="assets/images/ecommerce/1.png" /></a></li>
+                                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#product_2"><img src="assets/images/ecommerce/2.png" /></a></li>
+                                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#product_3"><img src="assets/images/ecommerce/3.png" /></a></li>
+                                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#product_4"><img src="assets/images/ecommerce/4.png" /></a></li>
+                                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#product_5"><img src="assets/images/ecommerce/5.png" /></a></li>                                    
+                                </ul>                
+                            </div>
+							
+                            <div class="details col-lg-8 col-md-12">
+								<div class="row clearfix">
+									<div class="col-lg-12">
+										<h4 class="product-title m-b-0"><input type="text" class="form-control" placeholder="产品标题" /></h4>
+									</div>
+									<div class="col-lg-3">
+										<h5 class="price m-t-0">价格: <span class="col-amber">¥<div class="input-group">
+											<span class="input-group-addon"><i class="zmdi zmdi-money"></i></span>
+											<input class="form-control money-dollar" placeholder="99.99 ¥" type="text">
+										</div></span></h5>
+									</div>
+									<div class="col-lg-3">
+										<h5 class="price m-t-0">运费： <div class="input-group">
+											<span class="input-group-addon"><i class="zmdi zmdi-money"></i></span>
+											<input class="form-control money-dollar" placeholder="99.99 ¥" type="text">
+										</div></h5>
+									</div>
+									<div class="col-lg-3">
+										<h5 class="price m-t-0">赠送积分： <div class="input-group">
+											
+											<input class="form-control" placeholder="0" type="text">
+										</div></h5>
+									</div>
+									<div class="col-lg-3">
+										<h5 class="price m-t-0">赠送比例： <div class="input-group">
+											
+											<input class="form-control" placeholder="0%" type="text">
+										</div></h5>
+									</div>
+									
+								</div>
+								
+								<div class="body">
+								<form action="/" id="frmFileUpload" class="dropzone" method="post" enctype="multipart/form-data">
+									<div class="dz-message">
+										<div class="drag-icon-cph"> <i class="material-icons">touch_app</i> </div>
+										<h3>点击上传商品主图</h3>
+										<em>(建议图片规格 600X600像素.)</em> </div>
+									<div class="fallback">
+										<input name="file" type="file" multiple />
+									</div>
+								</form>
+								</div>
+                                <hr>
+                                <p class="product-description">
+                                        <textarea rows="4" class="form-control no-resize" placeholder="产品简介..."></textarea>
+                                </p>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="card">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#description">产品详情</a></li>
+                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#about">规格包装</a></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="body">                        
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="description">
+                                <textarea id="ckeditor">
+								</textarea>
+                            </div>
+                            
+                            <div class="tab-pane" id="about">
+								<script src="assets/js/pages/format/vue.min.js"></script>
+								
+
+							  <script src="assets/js/pages/format/index.js"></script>
+							  
+								<div id="app">
+								<!-- <h3>二、规格参数</h3> -->
+								<p>1、商品规格</p>
+								<el-row>
+								  <el-checkbox v-model="enableSpec" size="large">启用规格</el-checkbox>
+								  <span class="tip">* 启用商品规格后，商品的价格及库存以商品规格为准</span>
+								</el-row>
+								<div class="specs">
+								  <!-- specs不存在直接不渲染 -->
+								  <template v-if="specs.length != 0">
+									<div class="spec" v-for="(spec,index) in specs" v-show="enableSpec">
+									  <p>* 规格{{index+1}}
+										<el-button type="primary" @click="deleteType(index)" size="mini">删除规格</el-button>
+									  </p>
+									  <div>
+										<el-row>
+										  规格名:
+										  <el-input placeholder="请输入规格名，例如：尺寸" class="spec-type" v-model.trim.lazy="spec.type"></el-input>
+										</el-row>
+
+										<el-row>
+										  规格项:
+										  <el-input placeholder="请输入规格项，例如：XXL" class="spec-type" v-model.trim.lazy="newSpecName[index]"></el-input>
+										</el-row>
+										<!-- <p>{{newSpecName[index]}}</p> -->
+										<el-row>
+										  规格项:
+										  <el-row v-for="(specName,index) in spec.children">
+											<el-input placeholder="" class="spec-type" v-model.lazy="specName" @blur="modiSpec(specName,spec.children,index)" :disabled="true"></el-input>
+
+											<el-button @click="deleteSpec(index,spec.children)">删除</el-button>
+										  </el-row>
+										  <br>
+										  <el-button @click="addSpec(spec.children, newSpecName[index], index)" size="small">+添加</el-button>
+										  <br>
+										</el-row>
+									  </div>
+									</div>
+								  </template>
+								</div>
+								<el-button type="primary" :disabled="this.specs.length === 2" v-if="enableSpec" @click="addType" size="small" class="mar-t">添加规格</el-button>
+
+								<!-- <div v-for="item in arr">
+										<input type="text" v-model="item">
+									  </div>
+									  <button @click="arrTest">test</button> -->
+								<div class="price-wra">
+								  <br>
+								  <p>2、商品价格</p>
+								  <p v-show="enableSpec" class="mar-t">批量填写</p>
+								  <el-row class="price-wra">
+									<b class="must-fill">*</b>市场价（元）:
+									<el-input v-model="displayedPrices.marketPrice" class="goods-price"></el-input>&nbsp;&nbsp;
+									<b class="must-fill">*</b>享买价（元）:
+									<el-input v-model="displayedPrices.advicePrice" class="goods-price"></el-input>&nbsp;&nbsp; 供货价（元）:
+									<el-input v-model="displayedPrices.cost" class="goods-price"></el-input>&nbsp;&nbsp;<b class="must-fill">*</b>商品库存 :
+									<el-input v-model="displayedPrices.amount" class="goods-price"></el-input>&nbsp;&nbsp;
+									<!-- <el-button type="primary">确定</el-button> -->
+								  </el-row>
+								  <!-- <h4>{{displayedPrices.amount}}</h4> -->
+								  <br>
+								  <template v-if="enableSpec">
+									<!-- specs不存在直接不渲染 -->
+									<template v-if="specs.length != 0">
+									  <el-table :data="tableData" border :style="{width:specs.length*100+402+'px'}" key='aTable'>
+										<el-table-column prop="spec0" :label="specs[0].type" width="100">
+										  <input type="text" value="123">
+										</el-table-column>
+										<el-table-column prop="spec1" :label="specs[1].type" width="100" v-if="specs.length == 2">
+										</el-table-column>
+										<el-table-column label="市场价" width="100" min-width="200">
+										  <template scope="scope">
+											<el-popover trigger="click" placement="top">
+											  <p>市场价:
+												<el-input size="mini" class="price-modi" v-model.number="scope.row.prices.marketPrice"></el-input>
+											  </p>
+											  <div style="text-align: right; margin: 0">
+												<!-- <el-button size="mini" type="text" @click="visible2 = false">取消</el-button> -->
+												<!-- <el-button type="primary" size="mini" @click="visible2 = false">确定</el-button> -->
+											  </div>
+											  <div slot="reference" class="name-wrapper">
+												{{ scope.row.prices.marketPrice }}
+											  </div>
+											</el-popover>
+										  </template>
+										</el-table-column>
+										<el-table-column prop="prices.advicePrice" label="建议售价" width="100">
+										  <template scope="scope">
+											<el-popover trigger="click" placement="top">
+											  <p>市场价:
+												<el-input size="mini" class="price-modi" v-model.number="scope.row.prices.advicePrice"></el-input>
+											  </p>
+											  <div style="text-align: right; margin: 0">
+												<!-- <el-button size="mini" type="text" @click="visible2 = false">取消</el-button> -->
+												<!-- <el-button type="primary" size="mini" @click="visible2 = false">确定</el-button> -->
+											  </div>
+											  <div slot="reference" class="name-wrapper">
+												{{ scope.row.prices.advicePrice }}
+											  </div>
+											</el-popover>
+										  </template>
+										</el-table-column>
+										<el-table-column prop="prices.cost" label="供货价" width="100">
+										  <template scope="scope">
+											<el-popover trigger="click" placement="top">
+											  <p>市场价:
+												<el-input size="mini" class="price-modi" v-model.number="scope.row.prices.cost"></el-input>
+											  </p>
+											  <div style="text-align: right; margin: 0">
+												<!-- <el-button size="mini" type="text" @click="visible2 = false">取消</el-button> -->
+												<!-- <el-button type="primary" size="mini" @click="visible2 = false">确定</el-button> -->
+											  </div>
+											  <div slot="reference" class="name-wrapper">
+												{{ scope.row.prices.cost }}
+											  </div>
+											</el-popover>
+										  </template>
+										</el-table-column>
+										<el-table-column prop="prices.amount" label="库存" width="100">
+										  <template scope="scope">
+											<el-popover trigger="click" placement="top">
+											  <p>市场价:
+												<el-input size="mini" class="price-modi" v-model.number="scope.row.prices.amount"></el-input>
+											  </p>
+											  <div style="text-align: right; margin: 0">
+												<!-- <el-button size="mini" type="text" @click="visible2 = false">取消</el-button> -->
+												<!-- <el-button type="primary" size="mini" @click="visible2 = false">确定</el-button> -->
+											  </div>
+											  <div slot="reference" class="name-wrapper">
+												{{ scope.row.prices.amount }}
+											  </div>
+											</el-popover>
+										  </template>
+										</el-table-column>
+									  </el-table>
+									</template>
+								  </template>
+
+								  <template v-else>
+									<!-- <el-table :data="originalPrices" style="width: 401px" border>
+									  <el-table-column prop="marketPrice" label="市场价" width="100">
+									  </el-table-column>
+									  <el-table-column prop="advicePrice" label="建议售价" width="100">
+									  </el-table-column>
+									  <el-table-column prop="cost" label="供货价" width="100">
+									  </el-table-column>
+									  <el-table-column prop="amount" label="库存" width="100">
+									  </el-table-column>
+									</el-table> -->
+								  </template>
+								  <!-- <p>{{originalPrices}}</p>
+									  <p>{{defaultAddPrices}}</p>
+									  <p>{{specCombinations}}</p>
+									  <p>{{mySpecPrices}}</p>
+									  <p>{{specPrices}}</p>
+									  <p>{{tableData}}</p>
+									  <p>{{enableSpec}}</p>
+									  <p>{{arr}}</p> -->
+								</div>
+							  </div>
+
+							  <script>
+								new Vue({
+								  el: '#app',
+								  data: function () {
+									return {
+									  arr: [1, 3, 5],
+									  visible2: false,
+									  // local
+									  // __flag
+									  // 规格种类的数量
+									  typesLength: null,
+									  enableSpec: null,
+									  // __data
+									  // 注意此项为数组 type Array
+									  originalPrices: [{
+										marketPrice: 110,
+										advicePrice: 100,
+										cost: 90,
+										amount: 110
+									  }],
+									  // 批量填写价格
+									  defaultAddPrices: {
+										marketPrice: 100,
+										advicePrice: 90,
+										cost: 80,
+										amount: 50
+									  },
+									  // from backend
+									  specs: [{
+										  type: '颜色',
+										  children: ['红', '蓝']
+										},
+										{
+										  type: '尺寸',
+										  children: ['大', '中']
+										}
+									  ],
+									  // from backend
+									  _specs: [{
+										  type: '颜色',
+										  children: ['红', '蓝']
+										},
+										{
+										  type: '尺寸',
+										  children: ['大', '中']
+										}
+									  ],
+									  // from backend
+									  specPrices: [{
+										  specs: ['红', '大'],
+										  prices: {
+											marketPrice: 90,
+											advicePrice: 60,
+											cost: 40,
+											amount: 10
+										  }
+										},
+										{
+										  specs: ['红', '中'],
+										  prices: {
+											marketPrice: 30,
+											advicePrice: 70,
+											cost: 30,
+											amount: 10
+										  }
+										},
+										{
+										  specs: ['蓝', '大'],
+										  prices: {
+											marketPrice: 20,
+											advicePrice: 10,
+											cost: 30,
+											amount: 10
+										  }
+										},
+										{
+										  specs: ['蓝', '中'],
+										  prices: {
+											marketPrice: 50,
+											advicePrice: 40,
+											cost: 30,
+											amount: 10
+										  }
+										}
+									  ],
+									  newSpecName: ['', '']
+									}
+								  },
+								  methods: {
+									arrTest() {
+									  this.arr = 0
+									  var t = 0;
+									  var _t = '0';
+									  console.log('Boolean(t)')
+									  console.log(Boolean(t))
+									  console.log(Boolean(_t))
+									},
+									test() {
+									  console.log(this.specs)
+									},
+									deleteType(index) {
+									  var r = confirm('确定删除规格名么?')
+									  if (r) {
+										console.log('......' + r)
+										this.specs.splice(index, 1)
+										// 刷新 mySpecPrices
+										var myDefaultAddPrices = JSON.parse(JSON.stringify(this.defaultAddPrices));
+										this.mySpecPrices(this.specCombinations(), myDefaultAddPrices)
+									  } else {
+										return
+									  }
+									},
+									deleteSpec(index, spec) {
+									  spec.splice(index, 1)
+									  // 刷新 mySpecPrices
+									  var myDefaultAddPrices = JSON.parse(JSON.stringify(this.defaultAddPrices));
+									  this.mySpecPrices(this.specCombinations(), myDefaultAddPrices)
+									},
+									modiSpec(specName, spec, index) {
+									  spec[index] = specName;
+									  console.log(this.specs)
+									},
+									addType() {
+									  // alert()
+									  var obj = {}
+									  obj.type = "";
+									  obj.children = []
+									  this.specs.push(obj)
+									},
+									addSpec(spec, newSpecName, index) {
+									  console.log(newSpecName + '111')
+									  // 检测新规格名是否规范 1, 不为空. 2,不重复
+									  if (!newSpecName) {
+										alert('规格项名称不能为空')
+										return
+									  } else if (spec.includes(newSpecName)) {
+										alert('规格项名称不能为重复')
+										return
+									  }
+									  spec.push(newSpecName)
+									  console.log(spec)
+									  // 每次点击添加, 保存一个defaultAddPrices的深拷贝副本, 防止数据关联
+									  var myDefaultAddPrices = JSON.parse(JSON.stringify(this.defaultAddPrices));
+									  var specCombinations = this.specCombinations()
+									  this.mySpecPrices(specCombinations, myDefaultAddPrices)
+									  this.newSpecName[index] = ''
+									  // console.log(this.specs)
+									},
+									modiPrice() {
+									},
+									// 规格组合数组
+									specCombinations() {
+									  console.log(this.specs)
+									  var arrWra = [];
+									  // 有2个规格type
+									  if (this.specs.length == 2) {
+										var arr1 = this.specs[0].children
+										var arr2 = this.specs[1].children
+										// 判断arr1是否为[], 如果是 为其添加个空字符串占位
+										if (arr1.length == 0) {
+										  arr1 = ['']
+										}
+										if (arr2.length == 0) {
+										  arr2 = ['']
+										}
+										var arr = []
+										for (var t = 0; t < arr1.length; t++) {
+										  for (var i = 0; i < arr2.length; i++) {
+											arr = []
+											arr.push(arr1[t])
+											arr.push(arr2[i])
+											arrWra.push(arr)
+										  }
+										}
+										console.log(arrWra)
+										return arrWra
+										// 只有1个规格type
+									  } else if (this.specs.length == 1) {
+										var arr = this.specs[0].children
+										if (arr.length == 0) {
+										  arr = ['']
+										}
+										for (var i = 0; i < arr.length; i++) {
+										  var _arr = []
+										  _arr.push(arr[i])
+										  arrWra.push(_arr)
+										}
+										console.log(arrWra)
+										console.log('arrWra............')
+										return arrWra
+									  }
+									},
+									// 规格价格数据 local
+									// 数据更新
+									mySpecPrices(specCombinations, myDefaultAddPrices) {
+									  // function sameSpecs(element) {
+									  //   return element.specs == arr[i];
+									  // }
+									  var arrWra = []
+									  // 规格组合 数组
+									  var arr = specCombinations
+									  console.log(arr)
+									  for (var i = 0; i < arr.length; i++) {
+										// 新增 规格价格 项
+										var obj = {};
+										obj.specs = arr[i];
+										// !注意 a类型为数组
+										// 对比 新的 规格组合数组 与原价格数组
+										var oldItem = this.specPrices.filter((element) => {
+										  return element.specs + "" === arr[i] + "";
+										})
+										var newItem = this.specPrices.filter((element) => {
+										  return element.specs + "" != arr[i] + "";
+										})
+										// 注意这里用的是length因为 空数组,空对象的布尔值为true
+										// 旧规各项价格
+										if (oldItem.length) {
+										  obj.prices = oldItem[0].prices
+										  console.log(oldItem[0])
+										  // 新规各项价格
+										} else {
+										  console.log(newItem)
+										  console.log('_____')
+										  // if (newItem.length != 0) {
+										  // 这里用深拷贝否则各新项目的价格数据会关联
+										  newItem[0].prices = JSON.parse(JSON.stringify(myDefaultAddPrices));
+										  obj.prices = newItem[0].prices
+										  // }
+										}
+										arrWra.push(obj)
+									  }
+									  console.log(arrWra)
+									  this.specPrices = arrWra
+									},
+									// spec type 只有一个时, 检查重复 并 去重
+									// checkDuplicate() {
+									//   console.log(this.specPrices)
+									// }
+								  },
+								  computed: {
+									displayedPrices() {
+									  // console.log(this.enableSpec ? this.defaultAddPrices : this.originalPrices[0])
+									  return this.enableSpec ? this.defaultAddPrices : this.originalPrices[0]
+									},
+									// 表格数据
+									tableData() {
+									  var arr = this.specPrices;
+									  console.log(arr)
+									  for (var i = 0; i < arr.length; i++) {
+										arr[i].spec0 = arr[i].specs[0]
+										arr[i].spec1 = arr[i].specs[1]
+									  }
+									  // console.log(this.mySpecPrices)
+									  return arr
+									}
+								  },
+								  created() {
+									// this.defaultAddPrices = this.goodsData.defaultAddPrices
+									// this.originalPrices = this.goodsData.originalPrices
+									this.specs = this._specs
+									this.specs = []
+									this.specPrices = []
+									if (this.specs.length == 0) {
+									  // 初始化规格数据
+									  var obj = {}
+									  obj.type = "";
+									  obj.children = []
+									  this.specs.push(obj)
+									  // console.log(this.specs)
+									  // 初始化价格数据
+									  var _obj = [{}]
+									  _obj[0].specs = ['']
+									  _obj[0].prices = {
+										marketPrice: 0,
+										advicePrice: 0,
+										cost: 0,
+										amount: 0
+									  }
+									  this.specPrices = _obj
+									}
+									this.typesLength = this.specs.length
+									this.enableSpec = this.typesLength ? true : false
+									this.enableSpec = false
+									console.log(this.enableSpec)
+									console.log(this.typesLength)
+									console.log(this.specCombinations)
+									console.log('this.specCombinations')
+									if (this.typesLength === 2) {
+									  this.typeName1 = this.goodsData[0].type
+									  this.typeName2 = this.goodsData[0].type
+									}
+								  }
+								})
+							  </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<div class="col-lg-12">
+                <div class="action text-center">
+					<button class="btn btn-primary btn-round waves-effect" type="button">发布</button>
+                </div>
+			</div>
+        </div>
+    </div>
+</section>
+<!-- Jquery Core Js --> 
+<script src="assets/bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
+<script src="assets/bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
+<script src="assets/plugins/dropzone/dropzone.js"></script> <!-- Dropzone Plugin Js --> 
+<script src="assets/plugins/momentjs/moment.js"></script> <!-- Moment Plugin Js --> 
+<!-- Bootstrap Material Datetime Picker Plugin Js --> 
+<script src="assets/plugins/multi-select/js/jquery.multi-select.js"></script> <!-- Multi Select Plugin Js --> 
+
+<script src="assets/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script> 
+<script src="assets/js/pages/forms/basic-form-elements.js"></script> 
+<script src="assets/plugins/ckeditor/ckeditor.js"></script> <!-- Ckeditor --> 
+<script src="assets/js/pages/forms/editors.js"></script>
+
+<script src="assets/plugins/jquery-inputmask/jquery.inputmask.bundle.js"></script> <!-- Input Mask Plugin Js --> 
+<script src="assets/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script> <!-- Bootstrap Colorpicker Js --> 
+<script src="assets/bundles/mainscripts.bundle.js"></script><!-- Custom Js --> 
+<script src="assets/js/pages/forms/advanced-form-elements.js"></script> 
+</body>
+</html>

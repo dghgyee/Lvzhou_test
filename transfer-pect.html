@@ -1,0 +1,305 @@
+<!doctype html>
+<html class="no-js " lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<meta name="description" content="Responsive Bootstrap 4 and web Application ui kit.">
+<title>PECT-PECT互转</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon-->
+<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/plugins/jvectormap/jquery-jvectormap-2.0.3.min.css"/>
+<link rel="stylesheet" href="assets/plugins/morrisjs/morris.min.css" />
+<!-- Custom Css -->
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/color_skins.css">
+<!-- Bootstrap Select Css -->
+<link href="assets/plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
+
+<link rel="stylesheet" href="assets/css/shop.css"></head>
+<body class="theme-purple">
+<!-- Page Loader -->
+<div class="page-loader-wrapper">
+    <div class="loader">
+        <div class="m-t-30"><img class="zmdi-hc-spin" src="assets/images/logo.png" width="48" height="48" alt="Pect"></div>
+        <p>正在载入 请稍等...</p>        
+    </div>
+</div>
+<!-- Overlay For Sidebars -->
+<div class="overlay"></div>
+
+<!-- Top Bar -->
+<nav class="navbar p-l-5 p-r-5">
+    <ul class="nav navbar-nav navbar-left">
+        <li>
+            <div class="navbar-header">
+                <a href="javascript:void(0);" class="bars"></a>
+                <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" width="30" alt="Pect"><span class="m-l-10">PECT</span></a>
+            </div>
+        </li>
+        <li><a href="javascript:void(0);" class="ls-toggle-btn" data-close="true"><i class="zmdi zmdi-swap"></i></a></li>
+        <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="zmdi zmdi-notifications"></i>
+            <div class="notify"><span class="heartbit"></span><span class="point"></span></div>
+            </a>
+            <ul class="dropdown-menu pullDown">
+                <li class="body">
+                    <ul class="menu list-unstyled">
+                        <li>
+                            <a href="javascript:void(0);">
+                                <div class="media">
+                                    <img class="media-object" src="assets/images/xs/avatar2.jpg" alt="">
+                                    <div class="media-body">
+                                        <span class="name">李四 <span class="time">30分钟之前</span></span>
+                                        <span class="message">订单编号 230 157 142 229 155 155</span>                                        
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <div class="media">
+                                    <img class="media-object" src="assets/images/xs/avatar3.jpg" alt="">
+                                    <div class="media-body">
+                                        <span class="name">王五 <span class="time">31分钟之前</span></span>
+                                        <span class="message">订单编号 231 142 139 228 186 148</span>                                        
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <div class="media">
+                                    <img class="media-object" src="assets/images/xs/avatar4.jpg" alt="">
+                                    <div class="media-body">
+                                        <span class="name">赵六 <span class="time">35分钟之前</span></span>
+                                        <span class="message">订单编号 232 181 181 229 133 173</span>                                        
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <div class="media">
+                                    <img class="media-object" src="assets/images/xs/avatar5.jpg" alt="">
+                                    <div class="media-body">
+                                        <span class="name">刘一 <span class="time">35分钟之前</span></span>
+                                        <span class="message">订单编号 229 136 152 228 184 128</span>                                        
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <div class="media">
+                                    <img class="media-object" src="assets/images/xs/avatar6.jpg" alt="">
+                                    <div class="media-body">
+                                        <span class="name">张三 <span class="time">1小时之前</span></span>
+                                        <span class="message">订单编号 229 188 160 228 184 137</span>                                        
+                                    </div>
+                                </div>
+                            </a>
+                        </li>                        
+                    </ul>
+                </li>
+                <li class="footer"> <a href="trading-Information.html">查看全部</a> </li>
+            </ul>
+        </li>
+       
+        <li class="hidden-sm-down">
+            <div class="input-group">                
+                <input type="text" class="form-control" placeholder="Search...">
+                <span class="input-group-addon">
+                    <i class="zmdi zmdi-search"></i>
+                </span>
+            </div>
+        </li>        
+        <li class="float-right">
+            <a href="javascript:void(0);" class="fullscreen hidden-sm-down" data-provide="fullscreen" data-close="true"><i class="zmdi zmdi-fullscreen"></i></a>
+            <a href="sign-in.html" class="mega-menu" data-close="true"><i class="zmdi zmdi-power"></i></a>
+        </li>
+    </ul>
+</nav>
+
+<!-- Left Sidebar -->
+<aside id="leftsidebar" class="sidebar">
+    <ul class="nav nav-tabs">
+        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#Dashboard"><i class="zmdi zmdi-home m-r-5"></i>PECT</a></li>
+        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#user"><i class="zmdi zmdi-account m-r-5"></i>资料</a></li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane stretchRight active" id="Dashboard">
+            <div class="menu">
+                <ul class="list">
+                    <li>
+                        <div class="user-info">
+                            <div class="image"><a href="index.html"><img src="assets/images/profile_av.jpg" alt="User"></a></div>
+                            <div class="detail">
+                                <h4>张扬</h4>
+                                <small>id：Josezhang</small>                        
+                            </div>
+                            <a title="facebook" href="#"><i class="zmdi zmdi-facebook"></i></a>
+                            <a title="twitter" href="#"><i class="zmdi zmdi-twitter"></i></a>
+                            <a title="instagram" href="#"><i class="zmdi zmdi-instagram"></i></a>                            
+                        </div>
+                    </li>
+                    <li class="header">主菜单</li>
+					<li> <a href="shop.html" class="menu-toggle"><i class="zmdi zmdi-home"></i><span>逛商场</span> </a></li>
+                    <li class="active open"> <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-apps"></i><span>买家中心</span> </a>
+                        <ul class="ml-menu">
+                            <li><a href="recharge.html">PECT充值</a></li>
+							<li class="active"><a href="transfer-pect.html">PECT互转</a></li>
+                            <li><a href="orders.html">购物订单</a></li>
+                            <li><a href="expenses-record.html">消费记录</a></li>
+
+                        </ul>
+                    </li>
+                    <li> <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-shopping-cart"></i><span>卖家中心</span> </a>
+                        <ul class="ml-menu">
+							<li> <a href="shop-application.html">店铺申请</a></li>
+                            <li> <a href="edit-oneshop.html">店铺管理</a></li>
+							<li> <a href="edit-p-product-detail.html">商品发布</a></li>
+                            <li> <a href="edit-product-list.html">商品管理</a></li>
+							<li> <a href="trading-Information.html">客户订单</a> </li>   
+							<li><a href="returns-list.html">退货</a> </li>
+                            
+                        </ul>
+                    </li>
+					<!--li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-delicious"></i><span>订单管理</span></a>
+						<ul class="ml-menu">
+							<li> <a href="trading-Information.html">客户订单</a> </li>   
+							<li><a href="returns-list.html">退货</a> </li>
+                            						
+                        </ul>
+					</li-->
+					<li> <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-assignment"></i><span>提货单管理</span> </a>
+						<ul class="ml-menu">
+							<li> <a href="bill.html">我的提货单</a></li>
+                            <li> <a href="listed-sell-bill.html">出售大厅</a> </li>                    
+                            <li> <a href="transfer-bill-r.html">买入记录</a> </li>                    
+                            <li> <a href="transfer-bill-c.html">卖出记录</a> </li>                    
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tab-pane stretchLeft" id="user">
+            <div class="menu">
+                <ul class="list">
+                    <li>
+                        <div class="user-info m-b-20 p-b-15">
+                            <div class="image"><a href="index.html"><img src="assets/images/profile_av.jpg" alt="User"></a></div>
+                            <div class="detail">
+                                <h4>张扬</h4>
+                                <small>id：Josezhang</small>                        
+                            </div>
+                            <a title="facebook" href="#"><i class="zmdi zmdi-facebook"></i></a>
+                            <a title="twitter" href="#"><i class="zmdi zmdi-twitter"></i></a>
+                            <a title="instagram" href="#"><i class="zmdi zmdi-instagram"></i></a>
+                            <p class="text-muted">辽宁省沈阳市铁西区千缘财富商汇A座1203</p>
+                            <div class="row">
+                                <div class="col-4">
+                                    <h5 class="m-b-5">501</h5>
+                                    <small>积分</small>
+                                </div>
+                                <div class="col-4">
+                                    <h5 class="m-b-5">2501</h5>
+                                    <small>法币</small>
+                                </div>
+                                <div class="col-4">
+                                    <h5 class="m-b-5">6051</h5>
+                                    <small>余额</small>
+                                </div>                            
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <small class="text-muted">邮箱: </small>
+                        <p>yang.z@yahoo.com</p>
+                        <hr>
+                        <small class="text-muted">电话: </small>
+                        <p>+ 202-555-0191</p>
+                        <hr>
+                        <small class="text-muted">地址: </small>
+                        <p>辽宁省沈阳市铁西区千缘财富商汇A座1203</p>
+                        <hr>                   
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>    
+</aside>
+
+
+
+
+<!-- Main Content -->
+<section class="content home">
+    <div class="block-header">
+        <div class="row">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <h2>PECT互转
+                <small>欢迎来到PECT</small>
+                </h2>
+            </div>            
+            <div class="col-lg-7 col-md-7 col-sm-12 text-right">
+                <button class="btn btn-white btn-icon btn-round hidden-sm-down float-right m-l-10" type="button">
+                    <i class="zmdi zmdi-plus"></i>
+                </button>
+                <ul class="breadcrumb float-md-right">
+                    <li class="breadcrumb-item"><a href="index.html"><i class="zmdi zmdi-home"></i> PECT</a></li>
+                    <li class="breadcrumb-item active">PECT互转</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row clearfix">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="header">
+                        <h2><strong>充值</strong> 账号</h2>
+                    </div>
+                    <div class="body">
+                        <h3 class="m-b-0">你剩余PECT为 : <strong class="text-primary"> 99999</strong></h3>
+                        <div class="card" id="details">
+                            <div class="body">                                
+                                <div class="row clearfix">
+										<div class="col-lg-12 col-md-12 col-sm-12">
+											<div class="form-group">
+											<b>好友ID：</b>
+												<div class="form-group">
+													<input class="form-control" placeholder="请在此输入对方的id" type="rechage">
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-12 col-md-12 col-sm-12">
+										<b>PECT：</b>
+											<div class="form-group">
+												<input class="form-control" placeholder="请输入您要发给对方的PECT数量" type="rechage">
+											</div>
+										</div>
+										<div class="col-lg-12 col-md-12 col-sm-12">
+											<button type="button" class="btn btn-primary waves-effect" data-toggle="modal">确认</button>
+										</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Jquery Core Js --> 
+<script src="assets/bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js ( jquery.v3.2.1, Bootstrap4 js) --> 
+<script src="assets/bundles/vendorscripts.bundle.js"></script> <!-- slimscroll, waves Scripts Plugin Js -->
+
+<script src="assets/bundles/morrisscripts.bundle.js"></script><!-- Morris Plugin Js -->
+<script src="assets/bundles/jvectormap.bundle.js"></script> <!-- JVectorMap Plugin Js -->
+<script src="assets/bundles/knob.bundle.js"></script> <!-- Jquery Knob, Count To, Sparkline Js -->
+
+<script src="assets/bundles/mainscripts.bundle.js"></script>
+<script src="assets/js/pages/index.js"></script>
+<script src="assets/js/pages/forms/basic-form-elements.js"></script> 
+</body>
+</html>
